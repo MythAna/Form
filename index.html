@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Echo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <header class="topBanner">
+        <h1>Join Echo!</h1>
+    </header>
+
+    <!-- Divider Line -->
+    <div class="divider"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="navbarLink">Home</a>
+        <a href="#about-us" class="navbarLink">About Us</a>
+        <a href="#we-offer" class="navbarLink">We Offer</a>
+        <a href="#contact-us" class="navbarLink">Contact Us</a>
+    </nav>
+
+    <!-- Divider Line -->
+    <div class="divider"></div>
+
+    <!-- Main Form Section -->
+    <main class="formSection">
+        <h2>Sign Up Form</h2>
+        <p>Please fill out the form below to join Echo:</p>
+        <form class="joinForm">
+            <label for="lastName">Student Last Name: *</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="number">Number: *</label>
+            <input type="text" id="number" name="number" required>
+
+            <label for="pronouns">Student Preferred Pronouns: *</label>
+            <select id="pronouns" name="pronouns" required>
+                <option value="">Choose</option>
+                <option value="she/her">She/Her</option>
+                <option value="he/him">He/Him</option>
+                <option value="they/them">They/Them</option>
+                <option value="any">Any</option>
+                <option value="none">None</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="school">Current School: *</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="nation">Nation of Residence:</label>
+            <input type="text" id="nation" name="nation">
+
+            <label for="grade">Student Current Grade: *</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <label for="instrument">Student Instrument: *</label>
+            <select id="instrument" name="instrument" required>
+                <option value="">Choose</option>
+                <option value="flute">Flute</option>
+                <option value="oboe">Oboe</option>
+                <option value="music-production">Music Production/Theory</option>
+                <option value="piano">Piano</option>
+                <option value="violin">Violin</option>
+                <option value="cello">Cello</option>
+                <option value="euphonium">Euphonium</option>
+                <option value="voice">Voice</option>
+                <option value="ethiopian-drum">Ethiopian Drum</option>
+                <option value="guitar">Guitar</option>
+                <option value="viola">Viola</option>
+                <option value="double-bass">Double Bass</option>
+                <option value="trombone">Trombone</option>
+                <option value="percussion">Percussion</option>
+                <option value="tuba">Tuba</option>
+                <option value="clarinet">Clarinet</option>
+                <option value="saxophone">Saxophone</option>
+                <option value="trumpet">Trumpet</option>
+                <option value="horn">Horn</option>
+            </select>
+
+            <label for="experience">Please give us a brief summary of the student's musical experience: *</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="privateTeacher">Does the student currently have a private teacher? *</label>
+            <select id="privateTeacher" name="privateTeacher" required>
+                <option value="">Choose</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="additionalInfo">Any additional information we should know:</label>
+            <textarea id="additionalInfo" name="additionalInfo"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
